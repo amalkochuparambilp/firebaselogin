@@ -40,11 +40,9 @@
 
         function login() {
             const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-        
-window.location.href = "https://google.com";
+            const password = document.getElementById('password').value;      
 
-            auth.signInWithEmailAndPassword(email, password)
+       auth.signInWithEmailAndPassword(email, password)
                 .then((userCredential) => {
 
                     const user = userCredential.user;
